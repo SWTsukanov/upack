@@ -13,7 +13,7 @@ const AText = ({text,fontSize,colorText}) =>{
     return(
         <Text
             fontSize={fontSize}
-            colorText={colorText}
+            colorText={colorText}/*colorText={'var(--main-bg)'}*/
         >
             {text}
         </Text>

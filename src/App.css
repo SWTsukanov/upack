@@ -4,33 +4,25 @@
   box-sizing: border-box;
   font-family: -apple-system, SF Pro Display, BlinkMacSystemFont, sans-serif;
 }
-h1{
-  font-size: 36px;
-}
-h2{
-  font-size: 28px;
-}
-h3{
-  font-size: 24px;
-}
-h4{
-  font-size: 20px;
-}
-h5{
-  font-size: 18px;
-}
-h6{
-  font-size: 16px;
-}
+
 /* <====variables====> */
 
 :root {
+
   /* sizes  */
   --main-font: 18px;
+  --font-h1: 36px;
+  --font-h2: 28px;
+  --font-h3: 24px;
+  --font-h4: 20px;
+  --font-h5: 18px;
+  --font-h6: 16px;
+
 /* color  */
+  --main-color: black;
+  --secondary-color:white;
   --main-bg: #08A652;
-  --second-grey-bg:black grey;
-  --second-dark-grey-bg:#62696C;
+  --second-grey-bg:#62696C;
   --second-green-font: green;
 
 }
@@ -39,7 +31,6 @@ h6{
 /* <====classes====> */
 
 .App{
-  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
