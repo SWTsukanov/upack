@@ -3,51 +3,41 @@ import React, {useState} from 'react'
 import './App.css';
 
 
+
 // atom
 // import AText from './components/atom/A_Text';
 // import AIcon from './components/atom/A_Icon';
 // import AImage from './components/atom/A_Img';
 // import AInput from './components/atom/A_Input';
-import OMenuHeader from './components/organism/O_MenuHeader';
+// molecule
+import MContactShort from './components/molecule/M_ContactsShort';
+import MInfoLinks from './components/molecule/M_InfoLinks';
 
+// organism
+import OMenuFooter from './components/organism/O_MenuFooter';
+import OMenuHeader from './components/organism/O_MenuHeader';
+import OContactsMap from './components/organism/O_ContactsMap';
 
 
 
 function App() {
   // const imgMap = require('./assets/jpeg-images/mobile/map.jpg');
-  // const menu2 = require( './assets/png-icons/menu.png')
 
 
   return (
     <div className="App">
-
-
       <OMenuHeader />
 
-            {/* <AText 
-      text='hello'
-      fontSize={'30px'}
-      colorText={'green'}
-      /> */}
+      <OContactsMap />
 
-      {/* <AInput
-      placeholder='this is input'
-      required={false}
-      type={'text'}
-      /> */}
 
-      {/* <AImage
-      width='200px'
-      source={imgMap}
-      /> */}
 
-      {/* <AIcon 
-      source={menu2}
-      width={'20px'}
-      /> */}
-
+      <OMenuFooter />
     </div>
   );
 }
 
 export default App;
+
+
+

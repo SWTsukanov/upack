@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: -apple-system, SF Pro Display, BlinkMacSystemFont, sans-serif;
+  font-family: -apple-system, SF Pro Display Regular, BlinkMacSystemFont, sans-serif;
 }
 
 /* <====variables====> */
@@ -25,6 +25,10 @@
   --second-grey-bg:#62696C;
   --second-green-font: green;
 
+  /* font  */
+
+  --semibold:SF Pro Display Semibold;
+
 }
 
 
@@ -34,4 +38,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
