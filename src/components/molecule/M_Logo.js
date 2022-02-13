@@ -5,17 +5,6 @@ import AText from "../atom/A_Text";
 import  logo from '../../assets/png-icons/logo_upack.png'
 import styled from "styled-components";
 
-const Div=styled.div`
-    display: flex;
-    align-items:center;
-    
-`
-const DivSmall=styled.div`
-display: flex;
-flex-direction:column;
-margin-left:-5px;
-background-color:white;
-`
 
 
 const MLogo=()=>{
@@ -32,3 +21,16 @@ const MLogo=()=>{
 }
 
 export default MLogo;
+
+
+const Div=styled.div`
+    display: flex;
+    align-items:center;
+    
+`
+const DivSmall=styled.div`
+display: flex;
+flex-direction:column;
+margin-left:-5px;
+background-color:white;
+`

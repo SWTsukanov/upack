@@ -7,30 +7,6 @@
 
 /* <====variables====> */
 
-:root {
-
-  /* sizes  */
-  --main-font: 18px;
-  --font-h1: 36px;
-  --font-h2: 28px;
-  --font-h3: 24px;
-  --font-h4: 20px;
-  --font-h5: 18px;
-  --font-h6: 16px;
-
-/* color  */
-  --main-color: black;
-  --secondary-color:white;
-  --main-bg: #08A652;
-  --second-grey-bg:#62696C;
-  --second-green-font: green;
-
-  /* font  */
-
-  --semibold:SF Pro Display Semibold;
-
-}
-
 
 /* <====classes====> */
 

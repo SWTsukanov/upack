@@ -6,8 +6,8 @@ const MContact = ({ title, textMain,textSecond }) => {
   return (
     <Div>
       <AText
-        fontFamily={"SF Pro Display Semibold"}
-        fontSize={"var(--font-h4)"}
+        fontFamily={props=>props.theme.fonts.semibold}
+        fontSize={props=>props.theme.fontSize.h4}
         text={title}
       />
       <AText text={textMain} />

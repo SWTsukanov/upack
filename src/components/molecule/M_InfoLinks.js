@@ -9,8 +9,8 @@ const MInfoLinks = ({ itemArray }) => {
       <AText
         text={"Каталог"}
         fontFamily={"SF Pro Display Semibold"}  
-        fontSize={"var(--font-h4)"}
-        colorText={"var(--second-grey-bg)"}
+        fontSize={props=>props.theme.fontSize.h4}
+        colorText={props=>props.theme.colors.secondBgGrey}
       />
 
       {/* Links  */}

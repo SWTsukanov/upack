@@ -1,14 +1,9 @@
 import React from "react";
 import styled from 'styled-components';
 
-const Icon=styled.img`
-width:${props=>props.width||'20px'};
-height:${props=>props.height||'5px'};
 
 
-`;
-
-const AIcon = ({source,width,height,color,alt}) =>{
+const AIcon = ({source,width,height,color,alt,isActive}) =>{
     return(
         <Icon
         width={width}
@@ -16,9 +11,18 @@ const AIcon = ({source,width,height,color,alt}) =>{
         src={source}
         color={color}
         alt={alt}
+        active={isActive}
         />
             
     )
 }
 
 export default AIcon;
+
+
+const Icon=styled.img`
+width:${props=>props.width||'100%'};
+height:${props=>props.height||'100%'};
+transform: ${props=>props.active?`rotate(90deg)`:'0'};
+
+`;

@@ -2,7 +2,6 @@ import React from "react";
 
 import styled from "styled-components";
 
-// components 
 import MContactShort from "../molecule/M_ContactsShort";
 import MInfoLinks from "../molecule/M_InfoLinks";
 import AText from "../atom/A_Text";

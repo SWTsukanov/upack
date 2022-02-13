@@ -7,9 +7,9 @@ const MContactShort = () => {
     <Div>
       <AText
         fontFamily={'SF Pro Display Semibold'}
-        fontSize={"var(--font-h4)"}
+        fontSize={props=>props.theme.fontSize.h4}
         text={"Адрес и контакты"}
-        colorText={"var(--second-grey-bg)"}
+        colorText={props=>props.theme.colors.secondBgGrey}
       />
       <DivSmall>
         <AText
@@ -24,13 +24,13 @@ const MContactShort = () => {
       </DivSmall>
       <DivSmall>
         <AText 
-        fontSize={"var(--font-h6)"} 
+        fontSize={props=>props.theme.fontSize.h6}
         text={"+7 (983) 456-56-65"}
         marginTop={'10px'}
 
          />
         <AText 
-        fontSize={"var(--font-h6)"} 
+        fontSize={props=>props.theme.fontSize.h6}
         text={"+7 (983) 456-56-65"} 
         marginTop={'10px'}
 

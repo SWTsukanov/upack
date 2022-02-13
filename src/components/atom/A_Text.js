@@ -1,15 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
-
-
-const AText = ({ text, fontSize, colorText, fontFamily,marginTop }) => {
+const AText = ({ text, fontSize, colorText, fontFamily, marginTop }) => {
   return (
     <Text
       fontFamily={fontFamily}
       fontSize={fontSize}
-      colorText={colorText}/*colorText={'var(--main-bg)'}*/
-      marginTop={marginTop} 
+      colorText={colorText}
+      marginTop={marginTop}
     >
       {text}
     </Text>
@@ -18,13 +16,10 @@ const AText = ({ text, fontSize, colorText, fontFamily,marginTop }) => {
 
 export default AText;
 
-
 const Text = styled.p`
-  font-size: ${(props) => props.fontSize || "var(--main-font)"};
+  font-size: ${(props) => props.fontSize ? props.fontSize : props.theme.fontSize.mainFont};
   font-family: ${(props) => props.fontFamily};
-
-
   margin-top: ${(props) => props.marginTop};
-
-  color: ${(props) => props.colorText || "var(--main-color)"};
+  color: ${(props) =>
+    props.colorText ? props.colorText : props.theme.colors.main};
 `;
