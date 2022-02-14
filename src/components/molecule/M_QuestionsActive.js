@@ -8,29 +8,39 @@ import { useState } from "react";
 
 const MQuestionActive = ({ dataText, title, id }) => {
 
-    const [state,setState]=useState(false)
+  const [state, setState] = useState(false);
 
-    const handleClick=()=>{
-        setState(!state)
-    }
-    return (
+  const handleClick = () => {
+    setState(!state)
+  }
+
+
+  return (
     <Div onClick={handleClick} >
-        <DivEvent id={id}/>
+
+      <DivEvent id={id} />
+
       <DivTitle>
+
         <DivIcon>
           <AIcon isActive={state} source={braces} width={"10px"} height={"15px"} />
         </DivIcon>
-        <DivText>
+
+        <DivTitleText>
           <AText
             text={title}
             fontSize={(props) => props.theme.fontSize.h4}
             fontFamily={(props) => props.theme.fonts.semibold}
           />
-        </DivText>
+        </DivTitleText>
+
       </DivTitle>
+
+
       <DivSmall isActive={state}>
         <AText text={dataText} />
       </DivSmall>
+
     </Div>
   );
 };
@@ -44,7 +54,7 @@ const Div = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 0 15px;
+  padding: 10px 15px;
   margin-top: 27px;
   position: relative;
 `;
@@ -62,9 +72,10 @@ const DivTitle = styled.div`
 const DivIcon = styled.div`
   width: 50px;
 `;
-const DivText = styled.div`
+const DivTitleText = styled.div`
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
 `;
 const DivEvent = styled.div`

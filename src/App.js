@@ -4,7 +4,7 @@ import './App.css';
 
 import OMenuFooter from './components/organism/O_MenuFooter';
 import OMenuHeader from './components/organism/O_MenuHeader';
-import OContactsList from './components/organism/O_ContactsMap';
+import OContactsList from './components/organism/O_ContactsList';
 import Theme from './style/Theme';
 import OAboutQuestions from './components/organism/O_AboutQuestions';
 

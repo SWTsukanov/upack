@@ -6,39 +6,28 @@ import MContactShort from "../molecule/M_ContactsShort";
 import MInfoLinks from "../molecule/M_InfoLinks";
 import AText from "../atom/A_Text";
 
+import { catalog, aboutUs } from "../../data/menuFooter";
 
-const OMenuFooter=()=>{
+const OMenuFooter = () => {
 
-    const catalog=[
-        {itemId:1,title:'Гофрокороба'},
-        {itemId:2,title:'Коробки по применению'},
-        {itemId:3,title:'Коробки с печатью'},
-        {itemId:4,title:'Коробки для подарков'}
-        ];
-        
-    const aboutUs=[
-        {itemId:1,title:'О нас'},
-        {itemId:2,title:'Команда'},
-        {itemId:3,title:'Доставка'},
-        {itemId:4,title:'Наш сервис'},
-    ]    
-  
 
-    return(
+
+
+    return (
         <Div>
-                    <Hr/>
+            <Hr />
 
             <SmallDiv >
-            <MInfoLinks itemArray={ catalog.map((el)=>(el.title))}/>
-            <MInfoLinks itemArray={ aboutUs.map((el)=>(el.title))}/>
+                <MInfoLinks itemArray={catalog.map((el) => (el.title))} />
+                <MInfoLinks itemArray={aboutUs.map((el) => (el.title))} />
             </SmallDiv>
             <MContactShort />
             <WrapperLegacy >
-                <AText text={'Условия и положения'}/>
-                <AText text={'Политика конфиденциальности'}/>
+                <AText text={'Условия и положения'} />
+                <AText text={'Политика конфиденциальности'} />
             </WrapperLegacy>
-            
-            <AText text={'Все права защищены'}/>
+
+            <AText text={'Все права защищены'} />
 
 
 
@@ -68,7 +57,7 @@ padding: 0 15px;
 margin-top:29px;
 `;
 
-const WrapperLegacy=styled.div`
+const WrapperLegacy = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: space-between;
@@ -79,7 +68,7 @@ margin: 166px 0 0 0;
 padding: 20px 0 29px 0;
 `
 
-const Hr=styled.hr`
+const Hr = styled.hr`
 margin-top:46px;
 width:80%;
 `

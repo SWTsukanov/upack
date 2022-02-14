@@ -7,19 +7,10 @@ import AText from "../atom/A_Text";
 import AImage from "../atom/A_Img";
 import MContact from "../molecule/M_Contact";
 
+import { contacts } from "../../data/contacts";
+
 const OContactsList = () => {
-  const dataText = [
-    {
-      title: "Адрес:",
-      main: "Адрес: 143442, Московская обл. г. Красногорск, Аристово, ул. Светлая, 19, пом. 2339",
-    },
-    { title: "Email:", main: "korobka@gmail.com", second: "korobka@help.ru" },
-    {
-      title: "Номер:",
-      main: "+7 (983) 456-56-65",
-      second: "+7 (983) 456-56-65",
-    },
-  ];
+
 
   return (
     <Div>
@@ -30,7 +21,7 @@ const OContactsList = () => {
       />
       <AImage width={"330px"} source={map} />
 
-      {dataText.map((el, id) => (
+      {contacts.map((el, id) => (
         <DivSmall key={id}>
           <MContact           
             title={el.title}
