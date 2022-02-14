@@ -18,7 +18,7 @@ export default AText;
 
 const Text = styled.p`
   font-size: ${(props) => props.sizeFont ? props.sizeFont : props.theme.fontSize.mainFont};
-  font-family: ${(props) => props.font};
+  font-family: ${(props) => props.font ? props.font : props.theme.fontFamily};
   margin-top: ${(props) => props.marginTop};
   color: ${(props) =>
     props.colorText ? props.colorText : props.theme.colors.main};

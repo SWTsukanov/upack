@@ -11,19 +11,22 @@ const MQuestionActive = ({ dataText, title, id }) => {
   const [state, setState] = useState(false);
 
   const handleClick = () => {
-    setState(!state)
+    setState(state=>!state)
   }
-
-
+// custom hooks, listener outside 
   return (
     <Div onClick={handleClick} >
-
       <DivEvent id={id} />
 
       <DivTitle>
 
         <DivIcon>
-          <AIcon isActive={state} source={braces} width={"10px"} height={"15px"} />
+          <AIcon 
+          isActive={state} 
+          source={braces} 
+          width={"10px"} 
+          height={"15px"} 
+          />
         </DivIcon>
 
         <DivTitleText>
@@ -54,7 +57,7 @@ const Div = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 10px 15px;
+  padding: 9px 15px;
   margin-top: 27px;
   position: relative;
 `;
