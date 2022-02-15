@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React from "react";
 import styled from "styled-components";
 import AIcon from "../atom/A_Icon";
 import AText from "../atom/A_Text";

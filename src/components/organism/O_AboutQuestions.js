@@ -51,7 +51,6 @@ const OAboutQuestions = () => {
             <DivSmall onClick={handleClick}>
                 {activeQuestions.map((el, id) => {
                     return (
-
                         (<MQuestionActive
                             key={id}
                             id={id.toString()} /*data id attributes */
@@ -59,10 +58,8 @@ const OAboutQuestions = () => {
                             dataText={el.fullText}
                             componentId={(questionId === id.toString()) && true}
                         />)
-
                     )
                 }
-
                 )}
             </DivSmall>
         </Div>
