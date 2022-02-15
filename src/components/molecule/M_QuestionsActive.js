@@ -1,28 +1,23 @@
-import React from "react";
+import React, { useMemo } from "react";
 import styled from "styled-components";
 import AIcon from "../atom/A_Icon";
 import AText from "../atom/A_Text";
 
 import braces from "../../assets/png-icons/icon_1.png";
-import { useState } from "react";
 
-const MQuestionActive = ({ dataText, title, id }) => {
-
-  const [state, setState] = useState(false);
-
-  const handleClick = () => {
-    setState(state=>!state)
-  }
+const MQuestionActive = ({ dataText, title, id, componentId }) => {
 // custom hooks, listener outside 
   return (
-    <Div onClick={handleClick} >
+    <Div >
       <DivEvent id={id} />
+      {/* <Hr/> */}
+      
 
       <DivTitle>
 
         <DivIcon>
           <AIcon 
-          isActive={state} 
+          isActive={componentId} 
           source={braces} 
           width={"10px"} 
           height={"15px"} 
@@ -40,8 +35,11 @@ const MQuestionActive = ({ dataText, title, id }) => {
       </DivTitle>
 
 
-      <DivSmall isActive={state}>
-        <AText text={dataText} />
+      <DivSmall isActive={componentId}>
+        <AText 
+        text={dataText}
+        colorText={props=>props.theme.colors.secondBgGrey}
+        />
       </DivSmall>
 
     </Div>
@@ -52,18 +50,20 @@ export default MQuestionActive;
 
 const Div = styled.div`
   width: 100%;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 9px 15px;
-  margin-top: 27px;
+  padding:  15px 0 15px 9px;
   position: relative;
+  border-top: 1px solid ${props=>props.theme.colors.secondBgGrey}50  ;
 `;
 const DivSmall = styled.div`
   display: ${(props) => (props.isActive ? "flex" : "none")};
-  margin-top: 14px;
+  font-size: ${props=>props.theme.fontSize.h6};
+  /* margin-top: 14px; */
+  margin: 14px 9px 0 69px;
+  text-align: left;
 `;
 
 const DivTitle = styled.div`
@@ -71,6 +71,7 @@ const DivTitle = styled.div`
   display: flex;
   align-items: center;
   padding-left: 30px;
+  text-align: left;
 `;
 const DivIcon = styled.div`
   width: 50px;
@@ -87,3 +88,9 @@ width:100%;
 height:100%;
 background: transparent;
 `
+// const Hr = styled.hr`
+// width:100%;
+// border: 1px solid ${props=>props.theme.colors.secondBgGrey};
+// opacity: 20%;
+// margin-top: 9px;
+// `

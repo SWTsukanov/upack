@@ -18,7 +18,9 @@ const MAboutUs = ({propNumber, propTitle, propText}) => {
             </DivSmall>
             <DivText>
                 <AText 
-                text={propText} />
+                text={propText}
+                colorText={props=>props.theme.colors.secondBgGrey}
+                />
             </DivText>
 
         </Div>

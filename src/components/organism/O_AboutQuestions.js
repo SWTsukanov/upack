@@ -1,18 +1,31 @@
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
-import MQuestionActive from '../molecule/M_QuestionsActive';
+import dog from '../../assets/jpeg-images/mobile/dog.jpg'
 import { activeQuestions, aboutUs } from '../../data/questions'
+
+import MQuestionActive from '../molecule/M_QuestionsActive';
 import AText from '../atom/A_Text';
 import MAboutUs from '../molecule/M_AboutUs';
+import AImage from '../atom/A_Img';
 
 
 const OAboutQuestions = () => {
 
-const [questionId,setQuestionId]=useState();
+    const [questionId, setQuestionId] = useState(false);
 
-console.log(questionId)
+
+    const handleClick = (e) => {
+        if (questionId === e.target.id) { setQuestionId(false) }
+        else { setQuestionId(e.target.id) }
+    };
+
     return (
         <Div >
+            <DivImg>
+                <AImage
+                    source={dog}
+                />
+            </DivImg>
             <DivTitle>
                 <AText
                     text={'Почему именно мы?'}
@@ -35,18 +48,21 @@ console.log(questionId)
                 />
             </DivTitle>
 
-            <DivSmall onClick={(e)=>setQuestionId(e.target.id)}>
-                {activeQuestions.map((el, id) =>{return(
-                <Div key={id} >    
-                <Hr/>
-                <MQuestionActive
-                        
-                        id={id + 1} /*data id attributes */
-                        title={el.title}
-                        dataText={el.fullText} />
-                        </Div>
-                        )}
-                    
+            <DivSmall onClick={handleClick}>
+                {activeQuestions.map((el, id) => {
+                    return (
+
+                        (<MQuestionActive
+                            key={id}
+                            id={id.toString()} /*data id attributes */
+                            title={el.title}
+                            dataText={el.fullText}
+                            componentId={(questionId === id.toString()) && true}
+                        />)
+
+                    )
+                }
+
                 )}
             </DivSmall>
         </Div>
@@ -73,9 +89,9 @@ const DivTitle = styled.div`
     text-align: center;
     margin-top: 68px;
     margin-bottom: 20px;
-`
-const Hr = styled.hr`
-width:100%;
-border: 1px solid ${props=>props.theme.colors.secondBgGrey};
-opacity: 20%;
+`;
+const DivImg = styled.div`
+width: 100%;
+padding: 0 15px;
+margin-top: 63px;
 `
