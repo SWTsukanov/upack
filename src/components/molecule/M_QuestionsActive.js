@@ -9,9 +9,7 @@ const MQuestionActive = ({ dataText, title, id, componentId }) => {
 // custom hooks, listener outside 
   return (
     <Div >
-      <DivEvent id={id} />
-      {/* <Hr/> */}
-      
+      <DivEvent id={id} />      
 
       <DivTitle>
 

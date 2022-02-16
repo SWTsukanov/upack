@@ -13,7 +13,7 @@ const theme ={
     },
     colors:{
         main:'black',
-        secondary:'white',
+        secondary:'#FFFFFF',
         mainBg:'#08A652',
         secondBgGrey:'#62696C',
         secondFontGreen:'green'
