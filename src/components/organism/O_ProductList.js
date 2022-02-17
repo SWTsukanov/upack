@@ -7,7 +7,6 @@ import AIcon from "../atom/A_Icon";
 import AText from "../atom/A_Text";
 import MCatalogItem from "../molecule/M_CatalogItem";
 
-import img from '../../assets/jpeg-images/mobile/Rectangle 42.jpg'
 
 
 const OProductList = () => {

@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
-const AButton = ({propButton,propColor,propBgColor})=>{
+const AButton = ({propButton,propColor,propBgColor,click })=>{
     return(
     <Button 
+    onClick={click}
     color={propColor}
     background={propBgColor}
     >

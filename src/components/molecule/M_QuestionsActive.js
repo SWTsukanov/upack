@@ -81,10 +81,10 @@ const DivTitleText = styled.div`
   justify-content: space-around;
 `;
 const DivEvent = styled.div`
-position: absolute;
-width:100%;
-height:100%;
-background: transparent;
+  position: absolute;
+  width:100%;
+  height:100%;
+  background: transparent;
 `
 // const Hr = styled.hr`
 // width:100%;

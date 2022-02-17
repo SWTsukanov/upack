@@ -88,7 +88,7 @@ const DivTitle = styled.div`
     margin-bottom: 20px;
 `;
 const DivImg = styled.div`
-width: 100%;
-padding: 0 15px;
-margin-top: 63px;
+    width: 100%;
+    padding: 0 15px;
+    margin-top: 63px;
 `
