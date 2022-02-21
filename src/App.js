@@ -7,12 +7,14 @@ import { Routes, Route, Link } from 'react-router-dom';
 import Landing from './components/pages/LandingPage';
 import Catalog from './components/pages/Catalog';
 import Item from './components/pages/Item';
+import { useSelector } from 'react-redux';
 
 
 
 
 
 function App() {
+
 
   return (
     <Theme>
@@ -21,7 +23,7 @@ function App() {
         <Routes>
           <Route exact path='/' element={<Landing />} />
           <Route path='catalog' element={<Catalog />} />
-          <Route path='item' element={<Item />} />
+          <Route path='/catalog/item' element={<Item />} />
           <Route
             path='*'
             element={

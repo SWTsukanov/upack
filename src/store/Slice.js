@@ -1,18 +1,17 @@
-// import { createAction, createSlice } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 
-// const initialState = {
-//     loading:false,
-//     dataProducts:[],
-//     error:''
-// };
 
-// const Add = createAction('incrementBy')
+export const catalogSlice = createSlice({
+    name: 'catalogItems',
+    initialState: {
+        loading: false,
+        dataProducts: [],
+        error: ''
+    },
+    reducers: {
+        get() { }
+    }
+})
 
-// export const catalogSlice = createSlice({
-//     name:'catalogItems',
-//     initialState,
-//     reducers:{
-//         Add:state=> state.error + 'ass'
-//     }
-// })
-// // export {Add} = createAction(catalogSlice)
+export const { get } = catalogSlice.actions;
+export default catalogSlice.reducer
