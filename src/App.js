@@ -1,28 +1,36 @@
 import React from 'react'
 
 import './App.css';
-
-import OMenuFooter from './components/organism/O_MenuFooter';
-import OMenuHeader from './components/organism/O_MenuHeader';
-import OContactsList from './components/organism/O_ContactsList';
 import Theme from './style/Theme';
-import OAboutQuestions from './components/organism/O_AboutQuestions';
+import { Routes, Route } from 'react-router-dom';
 
-
+import Landing from './components/pages/LandingPage';
+import Catalog from './components/pages/Catalog';
+import Item from './components/pages/Item';
+import { getDataItem } from './store/Slice';
+import { useDispatch } from 'react-redux';
 
 function App() {
-
+const dispatch=useDispatch();
+  dispatch(getDataItem())
   return (
     <Theme>
-    <div className="App">
-      <OMenuHeader />
+      <div className="App">
 
-
-      <OAboutQuestions />
-
-      <OContactsList />
-      <OMenuFooter />
-    </div>
+        <Routes>
+          <Route exact path='/' element={<Landing />} />
+          <Route path='catalog' element={<Catalog />} />
+          <Route path='/catalog/item' element={<Item />} />
+          <Route
+            path='*'
+            element={
+              <main>
+                <p>404</p>
+              </main>
+            }
+          />
+        </Routes>
+      </div>
     </Theme>
   );
 }

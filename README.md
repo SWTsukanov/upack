@@ -28,7 +28,7 @@ Links:
 
 Stack:
     React,
-    React-router
+    React-router,
     Redux,
     Styled component
     
