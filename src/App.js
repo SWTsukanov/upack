@@ -2,20 +2,17 @@ import React from 'react'
 
 import './App.css';
 import Theme from './style/Theme';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 import Landing from './components/pages/LandingPage';
 import Catalog from './components/pages/Catalog';
 import Item from './components/pages/Item';
-import { useSelector } from 'react-redux';
-
-
-
-
+import { getDataItem } from './store/Slice';
+import { useDispatch } from 'react-redux';
 
 function App() {
-
-
+const dispatch=useDispatch();
+  dispatch(getDataItem())
   return (
     <Theme>
       <div className="App">
