@@ -31,7 +31,6 @@ const MForm = () => {
         setShowMessage(true);
         setState({...initialState});
         e.target.reset()
-
     }
     
 

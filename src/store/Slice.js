@@ -8,15 +8,15 @@ export const getDataItem = createAsyncThunk(
     return await axios.get('fakeDataItem.json').then((res)=>res.data)
 })
 
-
+const initial = {
+    loading: '',
+    dataProducts: [],
+    error: ''
+}
 
 export const catalogSlice = createSlice({
     name: 'catalogItems',
-    initialState: {
-        loading: '',
-        dataProducts: [],
-        error: ''
-    },
+    initialState: initial,
     reducers: {
         get() { }
     },
@@ -31,7 +31,7 @@ export const catalogSlice = createSlice({
              )
         .addCase(
             getDataItem.pending, (state)=>{
-                state.loading='loading';
+                state.loading='loading'
             }
         )    
 

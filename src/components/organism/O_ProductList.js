@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import arroawLink from '../../assets/png-icons/arrow.png'
 import { catalogLinks } from "../../data/catalogLinks";
@@ -26,17 +27,21 @@ const OProductList = () => {
                 {catalogLinks.map((el, id) =>
                     <MCatalogItem
                         key={id}
+                        catalogLink={el.link}
                         propImg={el.img}
                         propText={el.title}
                     />
                 )}
 
             </SmallDiv>
+
             <DivLink>
-                <AText text={'Перейти в каталог'}
-                    fontFamily={props => props.theme.fonts.semibold}
-                    underline='true'
-                />
+                <Link to={'/catalog'}>
+                    <AText text={'Перейти в каталог'}
+                        fontFamily={props => props.theme.fonts.semibold}
+                        underline='true'
+                    />
+                </Link>
                 <AIcon
                     width={'15px'}
                     source={arroawLink}

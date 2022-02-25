@@ -1,58 +1,74 @@
 [
     {
-        "itemName":"Гофрокороб",
-        "price":"6.86",
-        "rate":"4",
-        "extraInfo":"",
-        "parameters":{
-            "width":120,
-            "height":120,
-            "length":200,
-            "color":"Бурый",
-            "typePaper":"Т-23",
-            "paperLayers":3
-        }       
+        "itemName": "Гофрокороб",
+        "price": "6.86",
+        "rate": "4",
+        "extraInfo": "",
+        "category": {
+            "id": 1,
+            "name": "karton"
+        },
+        "parameters": {
+            "width": 120,
+            "height": 120,
+            "length": 200,
+            "color": "Бурый",
+            "typePaper": "Т-23",
+            "paperLayers": 3
+        }
     },
     {
-        "itemName":"Гофрокороб2",
-        "price":"6.86",
-        "rate":"4",
-        "extraInfo":"",
-        "parameters":{
-            "width":120,
-            "height":120,
-            "length":200,
-            "color":"Бурый",
-            "typePaper":"Т-23",
-            "paperLayers":3
-        }       
+        "itemName": "Гофрокороб2",
+        "price": "6.86",
+        "rate": "4",
+        "extraInfo": "",
+        "category": {
+            "id": 1,
+            "name": "karton"
+        },
+        "parameters": {
+            "width": 120,
+            "height": 120,
+            "length": 200,
+            "color": "Бурый",
+            "typePaper": "Т-23",
+            "paperLayers": 3
+        }
     },
     {
-        "itemName":"Гофрокороб4",
-        "price":"6.86",
-        "rate":"4",
-        "extraInfo":"",
-        "parameters":{
-            "width":120,
-            "height":120,
-            "length":200,
-            "color":"Бурый",
-            "typePaper":"Т-23",
-            "paperLayers":3
-        }       
+        "itemName": "Гофрокороб4",
+        "price": "6.86",
+        "rate": "4",
+        "extraInfo": "",
+        "category": {
+            "id": 1,
+            "name": "karton"
+        },
+        "parameters": {
+            "width": 120,
+            "height": 120,
+            "length": 200,
+            "color": "Бурый",
+            "typePaper": "Т-23",
+            "paperLayers": 3
+        }
     },
     {
-        "itemName":"Гофрокороб3",
-        "price":"6.86",
-        "rate":"4",
-        "extraInfo":"",
-        "parameters":{
-            "width":120,
-            "height":120,
-            "length":200,
-            "color":"Бурый",
-            "typePaper":"Т-23",
-            "paperLayers":3
-        }       
+        "itemName": "Гофрокороб3",
+        "price": "6.86",
+        "rate": "4",
+        "extraInfo": "",
+        "category": {
+            "id": 1,
+            "name": "karton"
+        },
+        "parameters": {
+            "width": 120,
+            "height": 120,
+            "length": 200,
+            "color": "Бурый",
+            "typePaper": "Т-23",
+            "paperLayers": 3
+        }
     }
 ]

@@ -3,9 +3,10 @@ import styled from 'styled-components';
 
 
 
-const AImage = ({source,width,height,alt}) =>{
+const AImage = ({propId,source,width,height,alt}) =>{
     return(
         <Image
+        id={propId}
         width={width}
         height={height}
         src={source}
@@ -20,4 +21,5 @@ export default AImage;
 const Image=styled.img`
 width:${props=>props.width||'100%'};
 height:${props=>props.height||'100%'};
+border: 1px solid red;
 `; 

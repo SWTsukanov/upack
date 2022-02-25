@@ -8,15 +8,16 @@ import OMenuHeader from "../organism/O_MenuHeader";
 const Item = () => {
 
     return(
-        <div>
+        <Div>
            <OMenuHeader />
            <Hr />
+           <MPath />
            <OCardItem />
 
-           <MPath />
+           <p>recomended</p>
 
            <OMenuFooter />
-        </div>
+        </Div>
     )
 }
 export default Item;

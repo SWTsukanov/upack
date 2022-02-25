@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import AButton from '../atom/A_Button';
 import AText from '../atom/A_Text';
@@ -15,7 +16,7 @@ const MAbout = () => {
                     lineHeight = {'120%'}
                 />
                 
-                <AButton propButton={'Подобрать упаковку'} />
+               <Link to={'/catalog'}> <AButton propButton={'Подобрать упаковку'} /></Link>
             </DivWrapper>
         </Div>
     )

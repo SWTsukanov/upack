@@ -24,5 +24,5 @@ const Icon=styled.img`
 width:${props=>props.width||'100%'};
 height:${props=>props.height||'100%'};
 transform: ${props=>props.active?`rotate(90deg)`:'0'};
-
+filter:${(props=>props.color==='green')&&'invert(44%) sepia(97%) saturate(388%) hue-rotate(95deg) brightness(94%) contrast(103%)'} ;
 `;

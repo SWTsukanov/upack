@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 
 import OMenuFooter from '../organism/O_MenuFooter';
 import OMenuHeader from '../organism/O_MenuHeader';
@@ -10,7 +10,11 @@ import MDescription from '../molecule/M_Description';
 import MAbout from '../molecule/M_About';
 import MForm from '../molecule/M_Form';
 
+
+
 const Landing = () => {
+    
+
     return (
         <>
             <OMenuHeader />
